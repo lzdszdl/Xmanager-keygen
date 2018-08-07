@@ -8,7 +8,8 @@ ProductCode = {
     'Xfile' : 3,
     'Xftp' : 4,
     'Xmanager 3D' : 5,
-    'Xmanager Enterprise' : 6
+    'Xmanager Enterprise' : 6,
+    'Xshell Plus' : 7
 }
 
 LicenseType = [
@@ -46,6 +47,7 @@ LicenseType = [
     [ ProductCode['Xmanager'], 0x35, 1, 'CLS Class C', 1],
     [ ProductCode['Xmanager'], 0x36, 1, 'DLS', 1],
     [ ProductCode['Xmanager'], 0x37, 1, 'SLS', 1],
+    [ ProductCode['Xshell Plus'], 0x0B, 0, 'Standard', 2],
     [ ProductCode['Xshell'], 0x0B, 0, 'Standard', 2],
     [ ProductCode['Xshell'], 0x0C, 0, 'Educational', 2],
     [ ProductCode['Xshell'], 0x0F, 0, 'Standard', 1],
@@ -144,12 +146,17 @@ ProductPublishList = (
     { 'ProductName' : 'Xlpd', 'Version' : 4, 'PublishDate' : datetime.date(2010, 8, 1) },
     { 'ProductName' : 'Xftp', 'Version' : 4, 'PublishDate' : datetime.date(2010, 8, 1) },
     { 'ProductName' : 'Xmanager Enterprise', 'Version' : 4, 'PublishDate' : datetime.date(2010, 8, 1) },
-
     { 'ProductName' : 'Xmanager', 'Version' : 5, 'PublishDate' : datetime.date(2014, 4, 28) },
     { 'ProductName' : 'Xshell', 'Version' : 5, 'PublishDate' : datetime.date(2014, 4, 28) },
     { 'ProductName' : 'Xlpd', 'Version' : 5, 'PublishDate' : datetime.date(2014, 4, 28) },
     { 'ProductName' : 'Xftp', 'Version' : 5, 'PublishDate' : datetime.date(2014, 4, 28) },
-    { 'ProductName' : 'Xmanager Enterprise', 'Version' : 5, 'PublishDate' : datetime.date(2014, 4, 28) }
+    { 'ProductName' : 'Xmanager Enterprise', 'Version' : 5, 'PublishDate' : datetime.date(2014, 4, 28) },
+    { 'ProductName' : 'Xmanager', 'Version' : 6, 'PublishDate' : datetime.date(2018, 4, 29) },
+    { 'ProductName' : 'Xshell', 'Version' : 6, 'PublishDate' : datetime.date(2018, 4, 29) },
+    { 'ProductName' : 'Xshell Plus', 'Version' : 6, 'PublishDate' : datetime.date(2018, 4, 29) },
+    { 'ProductName' : 'Xlpd', 'Version' : 6, 'PublishDate' : datetime.date(2018, 4, 29) },
+    { 'ProductName' : 'Xftp', 'Version' : 6, 'PublishDate' : datetime.date(2018, 4, 29) },
+    { 'ProductName' : 'Xmanager Enterprise', 'Version' : 6, 'PublishDate' : datetime.date(2018, 4, 29) }
 )
 
 def GetChecksum(preProductKey : str):
