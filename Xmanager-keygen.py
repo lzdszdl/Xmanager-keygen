@@ -197,5 +197,5 @@ def GenerateProductKey(IssueDate : datetime.date,
     Checksum = GetChecksum(preProductKey)
     ProductKey = preProductKey + '%03d' % Checksum
     return ProductKey
-
-print(GenerateProductKey(datetime.date(2017, 12, 15), 'Xmanager Enterprise', 5, 999))
+Key=GenerateProductKey(datetime.date(2018, 4, 29), 'Xshell Plus', 6, 999)
+print("<div>key="+Key+"</div>")
